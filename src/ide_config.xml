@@ -92,7 +92,9 @@
 	
 	<handlers>		
 		<!-- Global Generators -->
-		<handler id="GenHandler"			type="CFM" filename="HandlerSetup.cfm" />
+		<handler id="GenWidget"			type="CFM" filename="WidgetSetup.cfm" />
+		
+		
 		<handler id="GenPlugin"			type="CFM" filename="PluginSetup.cfm" />
 		<handler id="GenSkeleton"		type="CFM" filename="AppSkeleton.cfm" />
 		<handler id="GenModel"	    		type="CFM" filename="ModelSetup.cfm" />
@@ -119,19 +121,6 @@
 		
 		<!-- ForgeBox -->
 		<handler id="ForgeBoxInstallCategory" 	type="CFM" filename="forgebox/ForgeBoxInstallCategory.cfm" />
-		
-		<!-- WireBox -->
-		<handler id="WireBoxPropertyInjection" 		type="CFM" filename="wirebox/WireBoxPropertyInjection.cfm" />
-		<handler id="WireBoxSetterInjection" 		type="CFM" filename="wirebox/WireBoxSetterInjection.cfm" />
-		<handler id="WireBoxComponentPersitence" 	type="CFM" filename="wirebox/WireBoxComponentPersitence.cfm" />
-		<handler id="WireBoxCSToWireBox" 			type="CFM" filename="wirebox/WireBoxCSToWireBox.cfm" />
-		<handler id="WireBoxMMToWireBox" 			type="CFM" filename="wirebox/WireBoxMMToWireBox.cfm" />
-		<handler id="WireBoxGenBinder" 				type="CFM" filename="wirebox/WireBoxGenBinder.cfm" />
-		<handler id="WireBoxProviderMethod" 		type="CFM" filename="wirebox/WireBoxProviderMethod.cfm" />
-		<handler id="wireBoxGenAspect" 				type="CFM" filename="wirebox/WireBoxGenAspect.cfm" />
-		
-		<!-- Views -->
-		<handler id="ViewApiDocs"  type="CFM" filename="views/APIDocs.cfm" />
 	</handlers>
 
 </application>

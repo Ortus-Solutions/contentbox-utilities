@@ -1,0 +1,47 @@
+<!---
+|widgetDescription|
+
+All widgets inherit the following properties available to you:
+
+property name="categoryService"			inject="id:categoryService@cb";
+property name="entryService"			inject="id:entryService@cb";
+property name="pageService"				inject="id:pageService@cb";
+property name="contentService"			inject="id:contentService@cb";
+property name="contentVersionService"	inject="id:contentVersionService@cb";
+property name="authorService"			inject="id:authorService@cb";
+property name="commentService"			inject="id:commentService@cb";
+property name="customHTMLService"		inject="id:customHTMLService@cb";
+property name="cb"						inject="id:CBHelper@cb";
+property name="securityService" 		inject="id:securityService@cb";
+property name="html"					inject="coldbox:plugin:HTMLHelper";
+
+--->
+<cfcomponent hint="|widgetDescription|" output="false" |widgetPersistence|>
+
+<!------------------------------------------- CONSTRUCTOR ------------------------------------------->
+
+	<cffunction name="init" access="public" returntype="|widgetName|" output="false" hint="constructor">
+		<cfargument name="controller">
+		<cfscript>
+			
+			// Init Parent
+			super.init( arguments.controller );
+			
+			// Widget Properties
+			setPluginName("|widgetName|");
+			setPluginVersion("|widgetVersion|");
+			setPluginDescription("|widgetDescription|");
+			setPluginAuthor("|widgetAuthor|");
+			setPluginAuthorURL("|widgetAuthorURL|");
+			
+			return this;
+		</cfscript>
+	</cffunction>
+
+<!------------------------------------------- PUBLIC ------------------------------------------->
+
+	<cffunction name="renderIt" hint="This is the main renderit method you will need to implement in concrete widgets" output="false">
+	
+	</cffunction>
+
+</cfcomponent>	
