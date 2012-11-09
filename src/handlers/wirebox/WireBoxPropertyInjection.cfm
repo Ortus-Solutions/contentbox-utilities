@@ -15,7 +15,7 @@ injectionDSL = controller.getUtility().getInjectionDSLArray();
 <cfoutput>
 <response status="success" type="default">
 	<ide handlerfile="wirebox/WireBoxPropertyInjectionGenerator.cfm">
-		<dialog width="500" height="400" title="WireBox Property Injection" image="includes/images/ColdBox_Icon.png">
+		<dialog width="500" height="400" title="WireBox Property Injection" image="includes/images/ContentBox_43.png">
 			<input name="name" label="Property Name" type="string" required="true"
 				   tooltip="The name of the property"/>
 

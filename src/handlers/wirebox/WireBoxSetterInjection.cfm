@@ -15,7 +15,7 @@ injectionDSL = controller.getUtility().getInjectionDSLArray();
 <cfoutput>
 <response status="success" type="default">
 	<ide handlerfile="wirebox/WireBoxSetterInjectionGenerator.cfm">
-		<dialog width="500" height="400" title="WireBox Setter Injection" image="includes/images/ColdBox_Icon.png">
+		<dialog width="500" height="400" title="WireBox Setter Injection" image="includes/images/ContentBox_43.png">
 			<input name="beanName" label="Bean Setter Name" type="string" required="true"
 				   tooltip="The name of the bean to create a setter for: set{BeanName}"/>
 

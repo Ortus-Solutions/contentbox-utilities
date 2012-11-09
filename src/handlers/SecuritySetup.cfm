@@ -11,7 +11,7 @@ Date        :	08/01/2009
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="SecurityGenerator.cfm"> 
-		<dialog width="450" height="350" title="ColdBox Security Interceptor Configurator" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="450" height="350" title="ColdBox Security Interceptor Configurator" image="includes/images/ContentBox_43.png">  
 			<input name="rulesSource" label="Rules Source" type="list" 
 				   default="xml" helpmessage="There are more rule sources but this generator defaults to xml file.">
 				<option value="xml" />

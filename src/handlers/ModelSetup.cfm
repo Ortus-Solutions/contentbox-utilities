@@ -16,7 +16,7 @@ All handlers receive the following:
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="ModelGenerator.cfm"> 
-		<dialog width="700" height="550" title="New ColdBox Model Wizard" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="700" height="550" title="New ColdBox Model Wizard" image="includes/images/ContentBox_43.png">  
 			
 			<input name="Name" required="true" label="Model Name"  type="string" default="" 
 				   tooltip="Enter model cfc name without .cfc"

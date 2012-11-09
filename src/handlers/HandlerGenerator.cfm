@@ -113,7 +113,7 @@ All handlers receive the following:
 		</command>
 		</cfif>
 	</commands>
-	<dialog width="550" height="350" title="ColdBox Event Handler Wizard" image="includes/images/ColdBox_Icon.png"/>
+	<dialog width="550" height="350" title="ColdBox Event Handler Wizard" image="includes/images/ContentBox_43.png"/>
 	<body><![CDATA[
 	<html>
 		<head>

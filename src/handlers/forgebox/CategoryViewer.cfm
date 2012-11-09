@@ -25,7 +25,7 @@ destinationDir 	= data.event.ide.projectview.resource.xmlAttributes.path;
 <cfoutput> 
 <response showresponse="true"> 
 <ide> 
-<dialog width="850" height="600" title="ColdBox ForgeBox Category Installer" image="includes/images/ColdBox_Icon.png" />  
+<dialog width="850" height="600" title="ColdBox ForgeBox Category Installer" image="includes/images/ContentBox_43.png" />  
 <body> 
 <![CDATA[ 
 <html>

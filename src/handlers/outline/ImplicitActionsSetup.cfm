@@ -22,7 +22,7 @@ isTagBased = findNoCase("<cfcomponent", fileRead(filePath));
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="outline/ImplicitActionsGenerator.cfm"> 
-		<dialog width="700" height="500" title="ColdBox Implicit Actions Wizard" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="700" height="500" title="ColdBox Implicit Actions Wizard" image="includes/images/ContentBox_43.png">  
 			
 			<!--- Pre Handler --->
 			<input name="preHandler" label="Generate pre#action#()" type="boolean" checked="false" 

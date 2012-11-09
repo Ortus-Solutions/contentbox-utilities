@@ -44,7 +44,7 @@ fileWrite("#expandLocation#/#objectName#.cfc", content);
 		</command>
 		</cfif>
 	</commands>
-	<dialog width="600" height="600" title="ColdBox ORM Event Handler Wizard" image="includes/images/ColdBox_Icon.png"/>  
+	<dialog width="600" height="600" title="ColdBox ORM Event Handler Wizard" image="includes/images/ContentBox_43.png"/>  
 	<body>
 <![CDATA[
 <html>

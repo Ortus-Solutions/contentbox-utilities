@@ -20,7 +20,7 @@ generators = [
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="orm/ORMEntityGenerator.cfm"> 
-		<dialog width="700" height="550" title="ColdFusion ORM Entity Wizard" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="700" height="550" title="ColdFusion ORM Entity Wizard" image="includes/images/ContentBox_43.png">  
 			
 			<input name="Name" label="Entity Name" required="true"  type="string" default="" 
 				   tooltip="Enter name of entity without .cfc"

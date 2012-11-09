@@ -11,7 +11,7 @@ Date        :	08/01/2009
 <cfoutput>  
 <response status="success" type="default">  
 <ide handlerfile="wirebox/WireBoxProviderMethodGenerator.cfm"> 
-	<dialog width="500" height="400" title="WireBox Provider Method Generation" image="includes/images/ColdBox_Icon.png">  
+	<dialog width="500" height="400" title="WireBox Provider Method Generation" image="includes/images/ContentBox_43.png">  
 		<input name="providerName" label="Provider Name" type="string" required="true" 
 			   tooltip="The name of the provider to use for the generated method."/>
 		

@@ -11,7 +11,7 @@ Date        :	08/01/2009
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="DeployGenerator.cfm"> 
-		<dialog width="400" height="250" title="ColdBox Deploy Interceptor Configurator" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="400" height="250" title="ColdBox Deploy Interceptor Configurator" image="includes/images/ContentBox_43.png">  
 			<input name="GenerateCommandObject" label="Generate a deploy command model object (model folder)" type="boolean" 
 				   tooltip="Generate a deploy command model object in the default model folder" />
 			<input name="Script" label="Script Based CFC" type="boolean" checked="false" 

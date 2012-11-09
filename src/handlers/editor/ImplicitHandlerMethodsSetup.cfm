@@ -15,7 +15,7 @@ All handlers receive the following:
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="editor/ImplicitHandlerMethodsGenerator.cfm"> 
-		<dialog width="700" height="500" title="ColdBox Implicit Handler Wizard" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="700" height="500" title="ColdBox Implicit Handler Wizard" image="includes/images/ContentBox_43.png">  
 			
 			<!--- Pre Handler --->
 			<input name="preHandler" label="Generate PreHandler()" type="boolean" checked="false" 

@@ -16,7 +16,7 @@ All handlers receive the following:
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="wirebox/WireBoxGenAspectGenerator.cfm"> 
-		<dialog width="500" height="450" title="New WireBox AOP Aspect Wizard" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="500" height="450" title="New WireBox AOP Aspect Wizard" image="includes/images/ContentBox_43.png">  
 			
 			<input name="Name" required="true" label="Aspect Name"  type="string" default="" 
 				   tooltip="Enter aspect cfc name without .cfc"

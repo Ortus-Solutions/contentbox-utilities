@@ -133,11 +133,12 @@
 		<handler id="AutoUpdateCheck" type="CFM" filename="AutoUpdateCheck.cfm" />
 		
 		<!-- Resources -->
-		<handler id="ExtensionHelp" 	type="CFM" filename="resources/ExtensionHelp.cfm" />
-		<handler id="ContentBoxAPI" 		type="CFM" filename="resources/ContentBoxAPI.cfm" />
+		<handler id="ContentBoxAPI" 	type="CFM" filename="resources/ContentBoxAPI.cfm" />
+		<handler id="ContentBoxDocs" 	type="CFM" filename="resources/ContentBoxDocs.cfm" />
+		<!--COMING SOON
 		<handler id="ColdBoxQuickDocs" 	type="CFM" filename="resources/ColdBoxQuickDocs.cfm" />
 		<handler id="ColdBoxSearch"	 	type="CFM" filename="resources/ColdBoxSearch.cfm" />
-		<handler id="ContentBoxDocs" 		type="CFM" filename="resources/ContentBoxDocs.cfm" />
+		-->
 		
 		<!-- Debugger -->
 		<handler id="SiteOpener" 	type="CFM" filename="opener/Site.cfm" />

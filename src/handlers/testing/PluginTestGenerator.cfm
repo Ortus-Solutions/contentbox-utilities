@@ -47,7 +47,7 @@ All handlers receive the following:
 			</params>
 		</command>
 	</commands>
-	<dialog width="550" height="350" title="ColdBox Plugin Test Wizard" image="includes/images/ColdBox_Icon.png"/>  
+	<dialog width="550" height="350" title="ColdBox Plugin Test Wizard" image="includes/images/ContentBox_43.png"/>  
 	<body>
 	<![CDATA[
 	<html>

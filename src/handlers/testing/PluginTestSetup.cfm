@@ -16,7 +16,7 @@ All handlers receive the following:
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="testing/PluginTestGenerator.cfm"> 
-		<dialog width="600" height="400" title="ColdBox Plugin Test Wizard" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="600" height="400" title="ColdBox Plugin Test Wizard" image="includes/images/ContentBox_43.png">  
 			
 			<input name="pluginPath" label="Instantiation Path" required="true"  type="string" default="" 
 				   tooltip="Enter the full instantiation path of the plugin object to test."

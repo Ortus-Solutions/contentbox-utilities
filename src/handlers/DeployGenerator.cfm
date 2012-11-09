@@ -75,7 +75,7 @@ if( fileExists(configLocation) ){
 		</command>
 		</cfif>
 	</commands>
-	<dialog width="600" height="500" title="ColdBox Deploy Tag Configurator" image="includes/images/ColdBox_Icon.png"/>  
+	<dialog width="600" height="500" title="ColdBox Deploy Tag Configurator" image="includes/images/ContentBox_43.png"/>  
 	<body><![CDATA[
 	<html>
 		<head>

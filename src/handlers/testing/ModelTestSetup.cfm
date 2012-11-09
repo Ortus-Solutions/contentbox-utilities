@@ -16,7 +16,7 @@ All handlers receive the following:
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="testing/ModelTestGenerator.cfm"> 
-		<dialog width="600" height="400" title="ColdBox Model Test Wizard" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="600" height="400" title="ColdBox Model Test Wizard" image="includes/images/ContentBox_43.png">  
 			
 			<input name="modelPath" label="Instantiation Path" required="true"  type="string" default="" 
 				   tooltip="Enter the full instantiation path of the model object to test."

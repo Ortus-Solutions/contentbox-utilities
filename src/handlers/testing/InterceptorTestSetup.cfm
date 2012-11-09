@@ -16,7 +16,7 @@ All handlers receive the following:
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="testing/InterceptorTestGenerator.cfm"> 
-		<dialog width="600" height="400" title="ColdBox Interceptor Test Wizard" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="600" height="400" title="ColdBox Interceptor Test Wizard" image="includes/images/ContentBox_43.png">  
 			
 			<input name="interceptorPath" label="Instantiation Path" required="true"  type="string" default="" 
 				   tooltip="Enter the full instantiation path of the interceptor object to test."

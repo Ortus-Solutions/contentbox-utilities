@@ -20,7 +20,7 @@ All handlers receive the following:
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="AppSkeletonGenerate.cfm"> 
-		<dialog width="450" height="450" title="ColdBox Application Generator" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="450" height="450" title="ColdBox Application Generator" image="includes/images/ContentBox_43.png">  
 			<input name="ApplicationType" label="Select Application Type To Generate" type="list">
 			<cfloop query="appSkeletons">
 				<cfif left(appSkeletons.name,1) neq ".">

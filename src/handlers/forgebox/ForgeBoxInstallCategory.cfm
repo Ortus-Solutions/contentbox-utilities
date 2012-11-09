@@ -28,7 +28,7 @@ types = getTypes();
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="forgebox/CategoryViewer.cfm"> 
-		<dialog width="500" height="300" title="ColdBox ForgeBox Installer" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="500" height="300" title="ColdBox ForgeBox Installer" image="includes/images/ContentBox_43.png">  
 			
 			<input name="Category" label="Category" type="list" default="#types.typeslug[1]#">
 				<cfloop query="types">

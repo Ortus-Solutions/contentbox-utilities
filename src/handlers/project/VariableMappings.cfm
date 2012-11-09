@@ -54,7 +54,7 @@ fileWrite(settingsLocation, controller.getUtility().prettifyXML(settingsXML));
 			</params>
 		</command>
 	</commands>
-	<dialog width="650" height="450" title="ColdBox Variable Mappings" image="includes/images/ColdBox_Icon.png"/>  
+	<dialog width="650" height="450" title="ColdBox Variable Mappings" image="includes/images/ContentBox_43.png"/>  
 	<body><![CDATA[
 	<html>
 		<head>

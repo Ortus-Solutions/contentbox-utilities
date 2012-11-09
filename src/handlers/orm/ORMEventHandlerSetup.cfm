@@ -16,7 +16,7 @@ All handlers receive the following:
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="orm/ORMEventHandlerGenerator.cfm"> 
-		<dialog width="600" height="550" title="ColdBox ORM Event Handler Wizard" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="600" height="550" title="ColdBox ORM Event Handler Wizard" image="includes/images/ContentBox_43.png">  
 		
 			<input name="Name" label="Event Handler File Name" required="true"  type="string" default="EventHandler" 
 					tooltip="The name of your ORM Event Handler Object (no .cfc)" />

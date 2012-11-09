@@ -16,7 +16,7 @@ All handlers receive the following:
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="testing/IntegrationTestGenerator.cfm"> 
-		<dialog width="600" height="400" title="ColdBox Integration Test Wizard" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="600" height="400" title="ColdBox Integration Test Wizard" image="includes/images/ContentBox_43.png">  
 			
 			<input name="Name" label="Name of Handler To Test" required="true"  type="string" default="" 
 				   tooltip="Enter the name of the handler to test without .cfc"

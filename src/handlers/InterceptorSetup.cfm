@@ -16,7 +16,7 @@ All handlers receive the following:
 <cfoutput>  
 <response>  
 	<ide handlerfile="InterceptorGenerator.cfm"> 
-		<dialog width="700" height="450" title="ColdBox Interceptor Wizard" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="700" height="450" title="ColdBox Interceptor Wizard" image="includes/images/ContentBox_43.png">  
 			<input name="Name" label="Enter interceptor name" required="true"  type="string" default="" tooltip="Enter interceptor cfc name without .cfc" />
 			<input name="Description" label="Enter interceptor description"  type="string" default="" tooltip="Enter interceptor description" />					
 			<input name="Script" label="Script Based CFC" type="boolean" checked="false" tooltip="Choose whether to create the cfc in pure script or not." />

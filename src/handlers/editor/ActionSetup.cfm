@@ -20,7 +20,7 @@ All handlers receive the following:
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="editor/ActionGenerator.cfm"> 
-		<dialog width="700" height="400" title="ColdBox Action Wizard" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="700" height="400" title="ColdBox Action Wizard" image="includes/images/ContentBox_43.png">  
 			
 			<input name="Name" label="Method Name" required="true"  type="string" default="" 
 				   tooltip="Enter the name of the action to create"

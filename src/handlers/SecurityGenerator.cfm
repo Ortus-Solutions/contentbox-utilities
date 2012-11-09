@@ -89,7 +89,7 @@ if( fileExists(configLocation) ){
 		</command>
 		</cfif>
 	</commands>
-	<dialog width="550" height="450" title="ColdBox Security Configurator" image="includes/images/ColdBox_Icon.png"/>  
+	<dialog width="550" height="450" title="ColdBox Security Configurator" image="includes/images/ContentBox_43.png"/>  
 	<body><![CDATA[
 	<html>
 		<head>

@@ -86,7 +86,7 @@ fileWrite( expandLocation & "/#inputStruct.name#.cfc", entityContent );
 			</params>
 		</command>
 	</commands>
-	<dialog width="550" height="350" title="ColdFusion ORM Entity Wizard" image="includes/images/ColdBox_Icon.png"/>
+	<dialog width="550" height="350" title="ColdFusion ORM Entity Wizard" image="includes/images/ContentBox_43.png"/>
 	<body><![CDATA[
 	<html>
 		<head>

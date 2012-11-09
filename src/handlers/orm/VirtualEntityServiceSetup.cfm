@@ -15,7 +15,7 @@ All handlers receive the following:
 <cfoutput>  
 <response status="success" type="default">  
 	<ide handlerfile="orm/VirtualEntityServiceGenerator.cfm"> 
-		<dialog width="600" height="350" title="ColdBox Virtual Entity Service Wizard" image="includes/images/ColdBox_Icon.png">  
+		<dialog width="600" height="350" title="ColdBox Virtual Entity Service Wizard" image="includes/images/ContentBox_43.png">  
 			<input name="EntityName" label="Entity Name" required="true"  type="string" tooltip="The name of entity to bind to" />
 			<input name="QueryCaching" label="Use Query Caching" type="boolean" checked="false"  tooltip="Use query caching?" />
 			<input name="EventHandling" label="Enable Event Handling" checked="true"  type="boolean" tooltip="Enables the virtual service to announce ColdBox Interception ORM Events" />

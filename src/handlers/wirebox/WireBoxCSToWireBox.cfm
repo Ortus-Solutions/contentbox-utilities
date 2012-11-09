@@ -45,7 +45,7 @@ if( NOT len(results.errorMessages) ){
 		</command>
 	</commands>
 	</cfif>
-	<dialog width="600" height="250" title="WireBox ColdSpring Converter" image="includes/images/ColdBox_Icon.png"/>  
+	<dialog width="600" height="250" title="WireBox ColdSpring Converter" image="includes/images/ContentBox_43.png"/>  
 	<body> 
 	<![CDATA[ 
 	<html>

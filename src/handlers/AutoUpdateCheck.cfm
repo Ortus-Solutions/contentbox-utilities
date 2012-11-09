@@ -34,7 +34,7 @@ All handlers receive the following:
 <cfoutput> 
 <response showresponse="true"> 
 <ide> 
-<dialog width="600" height="500" title="ColdBox Extension Auto Update" image="includes/images/ColdBox_Icon.png" />  
+<dialog width="600" height="500" title="ColdBox Extension Auto Update" image="includes/images/ContentBox_43.png" />  
 <body> 
 <![CDATA[ 
 <html>

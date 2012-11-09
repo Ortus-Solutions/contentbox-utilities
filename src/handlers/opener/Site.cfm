@@ -10,7 +10,7 @@ rootURL 	= replaceNoCase( filePath, replace(serverInfo.wwwroot,"\","/","all"),""
 <cfoutput> 
 <response showresponse="true"> 
 <ide url="http://#serverInfo.hostName#:#serverInfo.port#/#rootURL#?debugpanel=cache" >
-	<view id="cbox_cachebox_monitor" title="ColdBox CacheBox Monitor" icon="includes/images/coldbox_logo.jpg" />
+	<view id="cbox_cachebox_monitor" title="ColdBox CacheBox Monitor" icon="includes/images/contentbox.jpg" />
 </ide> 
 </response> 
 </cfoutput>
