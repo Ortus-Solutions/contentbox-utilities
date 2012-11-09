@@ -93,13 +93,8 @@
 	<handlers>		
 		<!-- Global Generators -->
 		<handler id="GenWidget"			type="CFM" filename="WidgetSetup.cfm" />
-		
-		
-		<handler id="GenPlugin"			type="CFM" filename="PluginSetup.cfm" />
-		<handler id="GenSkeleton"		type="CFM" filename="AppSkeleton.cfm" />
-		<handler id="GenModel"	    		type="CFM" filename="ModelSetup.cfm" />
-		<handler id="GenInterceptor"		type="CFM" filename="InterceptorSetup.cfm" />
 		<handler id="GenModule"			type="CFM" filename="ModuleSetup.cfm" />
+		<handler id="GenLayoutTheme"	type="CFM" filename="LayoutSetup.cfm" />
 		
 		<!-- Project Handlers -->
 		<handler id="GenVariableMappings"		type="CFM" filename="project/VariableMappings.cfm" />

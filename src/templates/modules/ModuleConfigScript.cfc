@@ -1,4 +1,29 @@
 /**
+********************************************************************************
+ContentBox - A Modular Content Platform
+Copyright 2012 by Luis Majano and Ortus Solutions, Corp
+www.gocontentbox.org | www.luismajano.com | www.ortussolutions.com
+********************************************************************************
+Apache License, Version 2.0
+
+Copyright Since [2012] [Luis Majano and Ortus Solutions,Corp]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+********************************************************************************
+*/
+component {
+
+/**
 Module Directives as public properties
 this.title 				= "Title of the module";
 this.author 			= "Author of the module";
@@ -40,7 +65,6 @@ Optional Methods
 - onUnload() 	: If found, it is fired once the module is unloaded
 
 */
-component {
 	
 	// Module Properties
 	this.title 				= "@title@";
@@ -108,14 +132,39 @@ component {
 	* Fired when the module is registered and activated.
 	*/
 	function onLoad(){
-		
+		// Let's add ourselves to the main menu in the Modules section
+		//var menuService = controller.getWireBox().getInstance("AdminMenuService@cb");
+		// Add Menu Contribution
+		/*
+		menuService.addSubMenu(topMenu=menuService.MODULES,
+								name="@title@",
+								label="Hello @title@",
+								href="#menuService.buildModuleLink('@title@','home')#");
+		*/
 	}
-	
+
+	/**
+	* Fired when the module is activated by ContentBox
+	*/
+	function onActivate(){
+
+	}
+
 	/**
 	* Fired when the module is unregistered and unloaded
 	*/
 	function onUnload(){
-		
+		// Let's remove ourselves to the main menu in the Modules section
+		//var menuService = controller.getWireBox().getInstance("AdminMenuService@cb");
+		// Remove Menu Contribution
+		//menuService.removeSubMenu(topMenu=menuService.MODULES, name="@title@");
+	}
+
+	/**
+	* Fired when the module is deactivated by ContentBox
+	*/
+	function onDeactivate(){
+
 	}
 	
 }

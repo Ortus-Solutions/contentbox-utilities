@@ -109,14 +109,39 @@ Optional Methods
 	* Fired when the module is registered and activated.
 	*/
 	function onLoad(){
-		
+		// Let's add ourselves to the main menu in the Modules section
+		//var menuService = controller.getWireBox().getInstance("AdminMenuService@cb");
+		// Add Menu Contribution
+		/*
+		menuService.addSubMenu(topMenu=menuService.MODULES,
+								name="@title@",
+								label="Hello @title@",
+								href="#menuService.buildModuleLink('@title@','home')#");
+		*/
 	}
-	
+
+	/**
+	* Fired when the module is activated by ContentBox
+	*/
+	function onActivate(){
+
+	}
+
 	/**
 	* Fired when the module is unregistered and unloaded
 	*/
 	function onUnload(){
-		
+		// Let's remove ourselves to the main menu in the Modules section
+		//var menuService = controller.getWireBox().getInstance("AdminMenuService@cb");
+		// Remove Menu Contribution
+		//menuService.removeSubMenu(topMenu=menuService.MODULES, name="@title@");
+	}
+
+	/**
+	* Fired when the module is deactivated by ContentBox
+	*/
+	function onDeactivate(){
+
 	}
 	
 </cfscript>
