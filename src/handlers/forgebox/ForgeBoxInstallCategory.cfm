@@ -13,7 +13,7 @@ All handlers receive the following:
 ----------------------------------------------------------------------->
 <cfscript>
 function getTypes(){
-	if( NOT structKeyExists(application,"cache-forgebox-types") ){
+	if( NOT structKeyExists(application, "cache-forgebox-types" ) ){
 		var forgeBox = createObject("component","contentboxExtesion.model.util.ForgeBox").init();
 		application["cache-forgebox-types"] = forgeBox.getTypes();
 	}
@@ -32,7 +32,9 @@ types = getTypes();
 			
 			<input name="Category" label="Category" type="list" default="#types.typeslug[1]#">
 				<cfloop query="types">
+					<cfif findnocase("contentbox", types.typename)>
 					<option value="#types.typeslug#">#types.typename#</option>
+					</cfif>
 				</cfloop> 
 			</input>
 			

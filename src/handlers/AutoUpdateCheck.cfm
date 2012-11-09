@@ -18,7 +18,7 @@ All handlers receive the following:
 	
 	// Check for forgebox item
 	forgeBox		 = createObject("component","contentboxExtesion.model.util.ForgeBox").init();
-	extensionEntry   = forgeBox.getEntry(slug="ColdBox-Platform-Utilities");
+	extensionEntry   = forgeBox.getEntry(slug="ContentBox-Utilities");
 	
 	// Check if versions are new.
 	updateFound = controller.getUtility().isNewVersion(cVersion=extensionVersion,nVersion=extensionEntry.version);
