@@ -15,12 +15,14 @@ mappings = {
 	cacheBox = "coldbox.system.cache.CacheFactory",
 	binder = "coldbox.system.ioc.config.Binder",
 	wirebox = "coldbox.system.ioc.Injector",
-	html	= "coldbox.system.plugins.HTMLHelper"
+	html	= "coldbox.system.plugins.HTMLHelper",
+	cb	= "contentbox.plugins.CBHelper"
 };
 
 // Destinations
 projectLocation = data.event.ide.projectview.XMLAttributes.projectLocation & "/";
 settingsLocation = projectLocation & "settings.xml";
+contentboxLocation = projectLocation & "modules/contentbox";
 
 // Add variable mappings to XML
 settingsXML = xmlParse(settingsLocation);
@@ -38,6 +40,29 @@ for(key in mappings){
 	arrayAppend(settingsXML.ResourceDetails.VariableMappings.xmlChildren,newMapping);
 }
 
+
+// Do CFC Mappings
+
+// Append ColdBox Mapping
+newVar = xmlElemNew(settingsXML,"MappingName");
+newVar.XMLText = "coldbox";
+arrayAppend( settingsXML.ResourceDetails.CFCMappings.xmlChildren, newVar );
+
+// Append ColdBox Path
+newVar = xmlElemNew(settingsXML,"Path");
+newVar.XMLText = projectLocation & "coldbox";
+arrayAppend( settingsXML.ResourceDetails.CFCMappings.xmlChildren, newVar );
+	
+// Append ContentBox Mapping
+newVar = xmlElemNew(settingsXML,"MappingName");
+newVar.XMLText = "contentbox";
+arrayAppend( settingsXML.ResourceDetails.CFCMappings.xmlChildren, newVar );
+
+// Append ContentBox Path
+newVar = xmlElemNew(settingsXML,"Path");
+newVar.XMLText = projectLocation & "modules/contentbox";
+arrayAppend( settingsXML.ResourceDetails.CFCMappings.xmlChildren, newVar );
+	
 // Write it out
 fileWrite(settingsLocation, controller.getUtility().prettifyXML(settingsXML));
 
@@ -54,7 +79,7 @@ fileWrite(settingsLocation, controller.getUtility().prettifyXML(settingsXML));
 			</params>
 		</command>
 	</commands>
-	<dialog width="650" height="450" title="ColdBox Variable Mappings" image="includes/images/ContentBox_43.png"/>  
+	<dialog width="650" height="450" title="ContentBox CMS Variable Mappings" image="includes/images/ContentBox_43.png"/>  
 	<body><![CDATA[
 	<html>
 		<head>
@@ -65,15 +90,16 @@ fileWrite(settingsLocation, controller.getUtility().prettifyXML(settingsXML));
 		<body>
 			<div class="messagebox-green">CFBuilder settings.xml Modified!</div>
 			
-			<h2>ColdBox Project Variable Mappings</h2>
+			<h2>ContentBox Project Variable Mappings</h2>
 			<div class="consoleLog">
 				<p>
-				We have succesffully added several ColdBox variable mappings
+				We have succesffully added several ContentBox & ColdBox variable mappings
 				to your project. You should now be able to get introspection on
 				the following variables:
 				<ul>
 					<li>binder</li>
 					<li>cacheBox</li>
+					<li>cb</li>
 					<li>controller</li>
 					<li>event</li>
 					<li>flash</li>

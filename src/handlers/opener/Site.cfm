@@ -9,8 +9,8 @@ rootURL 	= replaceNoCase( filePath, replace(serverInfo.wwwroot,"\","/","all"),""
 <cfheader name="Content-Type" value="text/xml">
 <cfoutput> 
 <response showresponse="true"> 
-<ide url="http://#serverInfo.hostName#:#serverInfo.port#/#rootURL#?debugpanel=cache" >
-	<view id="cbox_cachebox_monitor" title="ColdBox CacheBox Monitor" icon="includes/images/contentbox.jpg" />
+<ide url="http://#serverInfo.hostName#:#serverInfo.port#/#rootURL#" >
+	<view id="cb_site" title="Your ContentBox Site" icon="includes/images/contentbox.jpg" />
 </ide> 
 </response> 
 </cfoutput>

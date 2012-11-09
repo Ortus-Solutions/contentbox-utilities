@@ -62,8 +62,8 @@
 				
 				<!-- Menu: Resources -->
 				<menu name="Resources">
-					<action name="ContentBox Docs" 		handlerid="ContentBoxDocs"		showResponse="true"></action>
-					<action name="ContentBox Live API" 	handlerid="ContentBoxAPI"		showResponse="true"></action>
+					<action name="ContentBox Docs" 			handlerid="ContentBoxDocs"		showResponse="true"></action>
+					<action name="ContentBox 1.1.0 API" 	handlerid="ContentBoxAPI"		showResponse="true"></action>
 				</menu>
 				
 				<!-- Divider -->
@@ -99,42 +99,15 @@
 		<handler id="GenInterceptor"		type="CFM" filename="InterceptorSetup.cfm" />
 		<handler id="GenModule"			type="CFM" filename="ModuleSetup.cfm" />
 		
-		<!-- Testing Generators -->
-		<handler id="GenIntegrationTest" 	type="CFM" filename="testing/IntegrationTestSetup.cfm" />
-		<handler id="GenModelTest"		 	type="CFM" filename="testing/ModelTestSetup.cfm" />
-		<handler id="GenInterceptorTest" 	type="CFM" filename="testing/InterceptorTestSetup.cfm" />
-		<handler id="GenPluginTest" 		type="CFM" filename="testing/PluginTestSetup.cfm" />
-		
-		<!-- Config Folder Aspects -->
-		<handler id="GenDeploy"	    		type="CFM" filename="DeploySetup.cfm" />
-		<handler id="GenSecurity"    		type="CFM" filename="SecuritySetup.cfm" />		
-				
 		<!-- Project Handlers -->
-		<handler id="GenRewrites"				type="CFM" filename="project/RewriteSetup.cfm" />
 		<handler id="GenVariableMappings"		type="CFM" filename="project/VariableMappings.cfm" />
-		<handler id="GenLITEVariableMappings"	type="CFM" filename="project/LITEVariableMappings.cfm" />
-		
-		<!-- Editor Handlers -->
-		<handler id="GenImplicitHandlerMethods"		type="CFM" filename="editor/ImplicitHandlerMethodsSetup.cfm" />
-		<handler id="GenAction"						type="CFM" filename="editor/ActionSetup.cfm" />
-		
-		<!-- Outline Handlers -->
-		<handler id="GenImplicitActions"		type="CFM" filename="outline/ImplicitActionsSetup.cfm" />
-		
-		<!-- ORM -->
-		<handler id="GenORMEntity" 				type="CFM" filename="orm/ORMEntitySetup.cfm" />
-		<handler id="GenORMEventHandler" 		type="CFM" filename="orm/ORMEventHandlerSetup.cfm" />
-		<handler id="GenVirtualEntityService" 	type="CFM" filename="orm/VirtualEntityServiceSetup.cfm" />
-		<handler id="GenTemplatedEntityService" type="CFM" filename="orm/TemplatedEntityServiceSetup.cfm" />
-		<handler id="GenTransfer"				type="CFM" filename="orm/TransferSetup.cfm" />
-		<handler id="GenReactor"				type="CFM" filename="orm/ReactorSetup.cfm" />
 		
 		<!-- AutoUpdate -->
 		<handler id="AutoUpdateCheck" type="CFM" filename="AutoUpdateCheck.cfm" />
 		
 		<!-- Resources -->
-		<handler id="ContentBoxAPI" 	type="CFM" filename="resources/ContentBoxAPI.cfm" />
-		<handler id="ContentBoxDocs" 	type="CFM" filename="resources/ContentBoxDocs.cfm" />
+		<handler id="ContentBoxAPI" 		type="CFM" filename="resources/ContentBoxAPI.cfm" />
+		<handler id="ContentBoxDocs" 		type="CFM" filename="resources/ContentBoxDocs.cfm" />
 		<!--COMING SOON
 		<handler id="ColdBoxQuickDocs" 	type="CFM" filename="resources/ColdBoxQuickDocs.cfm" />
 		<handler id="ColdBoxSearch"	 	type="CFM" filename="resources/ColdBoxSearch.cfm" />
