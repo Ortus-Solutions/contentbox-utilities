@@ -16,6 +16,7 @@ www.coldboxframework.com | www.luismajano.com | www.ortussolutions.com
 			<input name="AuthorURL" label="Module Author Url"  type="string" required="true" default="http://" tooltip="Enter Module Author website URL" />
 			<input name="Description" label="Module description"  type="string" required="true" default="" tooltip="Enter module description" />
 			<input name="Version" label="Module version"  type="string" required="true" default="1.0" tooltip="Enter module version" />
+			<input name="ForgeBoxSlug" label="ForgeBox Slug"  type="string" default="" tooltip="Enter a ForgeBox Slug this module represents" />
 			
 		</dialog>
 	</ide>

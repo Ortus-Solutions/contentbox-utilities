@@ -78,6 +78,8 @@ Optional Methods
 	this.layoutParentLookup = true;
 	// Module Entry Point
 	this.entryPoint			= "@title@";
+	// ForgeBox Slug, used for ForgeBox connectivity and auto-update features, leave blank or remove if not used
+	this.forgeBoxSlug		= "@forgeboxSlug@";
 	
 	function configure(){
 		

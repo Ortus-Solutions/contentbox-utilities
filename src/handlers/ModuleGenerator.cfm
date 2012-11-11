@@ -24,6 +24,7 @@ www.coldboxframework.com | www.luismajano.com | www.ortussolutions.com
 <cfset moduleConfig = replaceNoCase(moduleConfig,"@authorURL@",inputStruct.authorURL,"all") />
 <cfset moduleConfig = replaceNoCase(moduleConfig,"@description@",inputStruct.description,"all") />
 <cfset moduleConfig = replaceNoCase(moduleConfig,"@version@",inputStruct.version,"all") />
+<cfset moduleConfig = replaceNoCase(moduleConfig,"@ForgeBoxSlug@",inputStruct.forgeboxSlug,"all") />
 
 <cftry>
 	<!--- Copy module template --->	
