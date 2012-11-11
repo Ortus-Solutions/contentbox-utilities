@@ -6,16 +6,18 @@ www.coldboxframework.com | www.luismajano.com | www.ortussolutions.com
 ----------------------------------------------------------------------->
 
 <!--- set widget properties default values --->
-<cfset defaultDescription 	= "I am new Widget" />
-<cfset defaultAuthor		= "" />
-<cfset defaultAuthorURL		= "" />
-<cfset defaultVersion		= "1.0" />
-<cfset defaultCache			= "true" />
-<cfset defaultCacheTimeout	= "" />
-<cfset message 				= "" />
+<cfset defaultDescription 	= "I am a new Widget">
+<cfset defaultAuthor		= "">
+<cfset defaultAuthorURL		= "">
+<cfset defaultVersion		= "1.0">
+<cfset defaultCache			= "true">
+<cfset defaultCacheTimeout	= "">
+<cfset defaultforgeBoxSlug	= "">
+<cfset message 				= "">
 <cfset expandLocation		= data.event.ide.projectview.resource.xmlAttributes.path />
 <cfset widgetName			= inputstruct.Name />
 <cfset scriptPrefix 		= "">
+
 <!--- Script? --->
 <cfif inputStruct.Script>
 	<cfset scriptPrefix = "Script">
@@ -50,6 +52,14 @@ www.coldboxframework.com | www.luismajano.com | www.ortussolutions.com
 <cfelse>
 	<cfset widgetContent = replaceNoCase(widgetContent,"|widgetAuthorURL|",defaultAuthorURL,"all") />	
 </cfif>
+
+<cfif len(inputstruct.forgeBoxSlug)>
+	<cfset widgetContent = replaceNoCase(widgetContent,"|forgeBoxSlug|",inputstruct.forgeBoxSlug,"all") />
+<cfelse>
+	<cfset widgetContent = replaceNoCase(widgetContent,"|forgeBoxSlug|",defaultforgeBoxSlug,"all") />	
+</cfif>
+
+
 
 <cfswitch expression="#inputStruct.Persistence#">
 	<cfcase value="Transient">

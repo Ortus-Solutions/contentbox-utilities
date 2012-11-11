@@ -27,6 +27,7 @@ component extends="contentbox.model.ui.BaseWidget" |widgetPersistence|{
 		setPluginDescription("|widgetDescription|");
 		setPluginAuthor("|widgetAuthor|");
 		setPluginAuthorURL("|widgetAuthorURL|");
+		setForgeBoxSlug("|forgeBoxSlug|");
 		
 		return this;
 	}

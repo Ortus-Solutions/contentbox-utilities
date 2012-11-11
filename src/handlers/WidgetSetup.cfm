@@ -14,7 +14,8 @@ www.coldboxframework.com | www.luismajano.com | www.ortussolutions.com
 			<input name="Version" label="Version"  type="string" default="1.0" tooltip="Enter widget version" />
 			<input name="Description" label="Description"  type="string" default="" tooltip="Enter widget description" />
 			<input name="Author" label="Author"  type="string" default="" tooltip="Enter widget Author" />
-			<input name="AuthorURL" label="Author Url"  type="string" default="" tooltip="Enter widget Author website URL" />
+			<input name="AuthorURL" label="Author Url"  type="string" default="http://" tooltip="Enter widget Author website URL" />
+			<input name="ForgeBoxSlug" label="ForgeBox Slug"  type="string" default="" tooltip="Enter a ForgeBox Slug this widget represents" />
 			
 			<input name="Persistence" label="Persistence Type" type="list" default="Singleton">
 				<option value="Transient" />

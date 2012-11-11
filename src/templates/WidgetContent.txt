@@ -33,6 +33,7 @@ property name="html"					inject="coldbox:plugin:HTMLHelper";
 			setPluginDescription("|widgetDescription|");
 			setPluginAuthor("|widgetAuthor|");
 			setPluginAuthorURL("|widgetAuthorURL|");
+			setForgeBoxSlug("|forgeBoxSlug|");
 			
 			return this;
 		</cfscript>

@@ -53,13 +53,6 @@
 					<action name="Administrator" 	handlerid="AdminOpener"	showResponse="true"></action>
 				</menu>
 				
-				<!-- Menu: Config Folder Aspects -->
-				<menu name="Setup Aspects">
-					<filters><filter type="folder" pattern="config" /></filters>
-					<action name="Setup Deploy Interceptor" 	handlerid="GenDeploy"	showResponse="true"></action>
-					<action name="Setup Security Interceptor" 	handlerid="GenSecurity"	showResponse="true"></action>
-				</menu>
-				
 				<!-- Menu: Resources -->
 				<menu name="Resources">
 					<action name="ContentBox Docs" 			handlerid="ContentBoxDocs"		showResponse="true"></action>
