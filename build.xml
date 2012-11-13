@@ -8,9 +8,9 @@
 	<property name="dir.exports"		value="${dir.userlocation}/exports" />
 	<property name="src.dir" 			value="src" />
 	<property name="build.dir" 			value="build" />
-	<property name="dist.dir" 			value="${dir.exports}/coldbox-platform-utilities" />
-	<property name="ftp.server"  		value="ftp.coldbox.org" />
-	<property name="ftp.remotedir" 		value="/httpdocs/downloads" />
+	<property name="dist.dir" 			value="${dir.exports}/contentbox-utilities" />
+	<property name="ftp.server"  		value="ftp.gocontentbox.org" />
+	<property name="ftp.remotedir" 		value="/httpdocs/builds" />
 		
 	<!-- dynamic values for build -->
 	<tstamp prefix="start"/>
@@ -36,7 +36,7 @@
 		
 	<target name="distribute" depends="build" description="Creates a zip archive of site for (re)distribution">
 		
-		<zip destfile="${dist.dir}/ColdboxPlatformUtilities.zip"
+		<zip destfile="${dist.dir}/ContentBoxUtilities.zip"
 			 basedir="${build.dir}"
 			 update="true"/>
 		
