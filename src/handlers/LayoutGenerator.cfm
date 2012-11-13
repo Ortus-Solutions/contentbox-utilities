@@ -7,44 +7,28 @@ www.coldboxframework.com | www.luismajano.com | www.ortussolutions.com
 
 <cfset message 			= "" />
 <cfset expandLocation	= data.event.ide.projectview.resource.xmlAttributes.path />
-<cfset moduleName		= inputstruct.title />
-<cfset scriptPrefix 	= "">
+<cfset layoutName		= inputstruct.name />
 
-<!--- Script? --->
-<cfif inputStruct.Script>
-	<cfset scriptPrefix = "Script">	
-</cfif>		
-		
 <!--- Read in Module Config --->
-<cffile action="read" file="#ExpandPath('../')#/templates/modules/ModuleConfig#scriptPrefix#.cfc" variable="moduleConfig">
+<cffile action="read" file="#ExpandPath('../')#/templates/layout/layout.cfc" variable="layoutConfig">
 
 <!--- Start Generation Replacing --->
-<cfset moduleConfig = replaceNoCase(moduleConfig,"@title@",moduleName,"all") />
-<cfset moduleConfig = replaceNoCase(moduleConfig,"@author@",inputStruct.author,"all") />
-<cfset moduleConfig = replaceNoCase(moduleConfig,"@authorURL@",inputStruct.authorURL,"all") />
-<cfset moduleConfig = replaceNoCase(moduleConfig,"@description@",inputStruct.description,"all") />
-<cfset moduleConfig = replaceNoCase(moduleConfig,"@version@",inputStruct.version,"all") />
+<cfset layoutConfig = replaceNoCase(layoutConfig,"@title@",inputstruct.title,"all") />
+<cfset layoutConfig = replaceNoCase(layoutConfig,"@author@",inputStruct.author,"all") />
+<cfset layoutConfig = replaceNoCase(layoutConfig,"@authorURL@",inputStruct.authorURL,"all") />
+<cfset layoutConfig = replaceNoCase(layoutConfig,"@description@",inputStruct.description,"all") />
+<cfset layoutConfig = replaceNoCase(layoutConfig,"@version@",inputStruct.version,"all") />
 
 <cftry>
-	<!--- Copy module template --->	
-	<cfset controller.getUtility().directoryCopy("#ExpandPath('../')#/templates/modules/", expandLocation & "/#moduleName#")>
-	
-	<!--- Clean Files Out --->
-	<cfif inputStruct.Script>
-		<cfset fileDelete(expandLocation & "/#moduleName#/handlers/Home.cfc")>
-		<cfset fileMove(expandLocation & "/#moduleName#/handlers/HomeScript.cfc",expandLocation & "/#moduleName#/handlers/Home.cfc")>
-	<cfelse>
-		<cfset fileDelete(expandLocation & "/#moduleName#/handlers/HomeScript.cfc")>
-	</cfif>
-	<cfset fileDelete(expandLocation & "/#moduleName#/ModuleConfigScript.cfc")>
-		
+	<!--- Copy layout template --->	
+	<cfset controller.getUtility().directoryCopy("#ExpandPath('../')#/templates/layout/", expandLocation & "/#layoutName#")>
+	<cfset fileDelete( expandLocation & "/#layoutName#/layout.cfc" )>
 	<!--- Write Out the New Config --->
-	<cfset fileWrite(expandLocation & "/#moduleName#/ModuleConfig.cfc",moduleConfig)>
-	
-	<cfset message = "Generated new module: #moduleName# in your application"/>
+	<cfset fileWrite(expandLocation & "/#layoutName#/#layoutName#.cfc",layoutConfig)>
+	<cfset message = "Generated new layout theme: #inputStruct.title# in your application"/>
 	
 	<cfcatch type="any">
-		<cfset message = "There was problem creating the module: #cfcatch.message# #cfcatch.detail#" />
+		<cfset message = "There was problem creating the layout theme: #cfcatch.message# #cfcatch.detail#" />
 	</cfcatch>
 </cftry>
 
@@ -60,11 +44,11 @@ www.coldboxframework.com | www.luismajano.com | www.ortussolutions.com
 		</command>
 		<command type="openfile">
 			<params>
-			    <param key="filename" value="#expandLocation#/#moduleName#/ModuleConfig.cfc" />
+			    <param key="filename" value="#expandLocation#/#layoutName#/#layoutName#.cfc" />
 			</params>
 		</command>
 	</commands>
-	<dialog width="550" height="350" title="ContentBox Module Wizard" image="includes/images/ContentBox_43.png"/>  
+	<dialog width="550" height="350" title="ContentBox Layout Theme Wizard" image="includes/images/ContentBox_43.png"/>  
 	<body>
 	<![CDATA[
 	<html>
